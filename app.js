@@ -1,5 +1,41 @@
 // import functions and grab DOM elements
+import { countsAsAYes } from './utils.js';
 
+const resultDisplay = document.getElementById('results-display');
+const quizButton = document.getElementById('quiz-button');
 // initialize state
 
 // set event listeners to update state and DOM
+quizButton.addEventListener('click', () => {
+
+    alert('Hello and welcome to my quiz!!');
+
+    const confirmation = confirm('Do you wish to continue?');
+    if (!confirmation) return;
+
+
+    const firstName = prompt('What is your first name?');
+    const lastName = prompt('What is your last name?');
+
+    let correctAnswers = 0;
+
+    //question 1
+    const answerOne = prompt('Was the Moog developed by Robert Moog?');
+
+    if (countsAsAYes(answerOne)) correctAnswers++;
+    
+    //question 2
+    const answerTwo = prompt('Is the Moog a type of electric guitar?');
+    if (!countsAsAYes(answerTwo)) correctAnswers++;
+
+    //question 3
+    const answerThree = prompt('Does the Moog appear on The Beatles song "Dig a Pony"? ');
+    if (!countsAsAYes(answerThree)) correctAnswers++;
+
+    resultDisplay.textContent = `Good job, ${firstName} ${lastName}, you got ${correctAnswers} right`;
+
+});
+
+
+
+

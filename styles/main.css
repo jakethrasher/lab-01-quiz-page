@@ -1,6 +1,27 @@
 .title{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 .moog-img{
-    width: 25%;
+    width: 420px;
+}
+.sub-heading{
+    font-size: 2rem;
+}
+p{
+    text-indent: 50px;
+    margin-top: 0;
+}
+section{
+    margin: 0px;
+    padding: 0px;
+}
+.button{
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.results{
+    font-size: 1.5rem;
+    margin: 15px;
+    color: red;
 }
