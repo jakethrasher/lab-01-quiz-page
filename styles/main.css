@@ -19,21 +19,31 @@ header{
     width: 350px;
 }
 .sub-heading{
+    text-decoration: underline;
     margin-top: 30px;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: 'Roboto Slab', serif;
 }
-p{
+p{  
+    font-family: 'Poppins', sans-serif;
     text-indent: 50px;
     margin: 0;
 }
-section{
-    margin: 0px;
-    padding: 0px;
+.media-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.models{
+    margin: 0px
+    
+}
+iframe{
+    margin-top:25px;
 }
 .button{
-    height: 38px;
-    width: 100px;
+    
+    height: 48px;
+    width: 120px;
     margin-top: 15px;
     margin-bottom: 15px;
     cursor: pointer;
@@ -41,12 +51,18 @@ section{
     background: linear-gradient(#1ac173, #9fe591);
     border: none;
     font-size: 0.9rem;
-    /* box-shadow: 3px 3px 3px; */
     border-radius: 15px;
-    
 }
+    
+ul{
+    line-height: 2.5rem;
+}
+
+
+
 .results{
-    font-size: 1.5rem;
-    margin: 15px;
+    font-size: 1.8rem;
+    font-family: 'Roboto Slab', serif;
+    /* margin: 15px; */
     color: red;
 }
