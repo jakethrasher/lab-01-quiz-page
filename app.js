@@ -31,7 +31,7 @@ quizButton.addEventListener('click', () => {
     const answerThree = prompt('Does the Moog appear on The Beatles song "Dig a Pony"? ');
     if (!countsAsAYes(answerThree)) correctAnswers++;
 
-    alert('Congrats! The quiz is over! Hit OK to view your results at the bottom of the page.')
+    alert('Congrats! The quiz is over! Hit OK to view your results at the bottom of the page.');
 
 
     
